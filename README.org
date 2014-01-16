@@ -1,0 +1,16 @@
+* Dynadot API in Ruby
+
+Dynadot API v2 in Ruby.
+API Documentation: http://www.dynadot.com/domain/api2.html
+
+* Example
+
+#+BEGIN_SRC ruby
+d = Dynadot.new "api key"
+
+d.search "a.com", "b.com", "c.net"
+
+d.register "prefer.com", 2
+
+d.delete "bad.com"
+#+END_SRC
