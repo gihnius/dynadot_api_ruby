@@ -86,7 +86,6 @@ class Dynadot
     params["key"] = @key
     params["command"] = command
     url.query = URI.encode_www_form(params)
-    return url
     http = Net::HTTP.new(url.host, url.port)
     http.use_ssl = true
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
